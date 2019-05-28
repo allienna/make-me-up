@@ -1,0 +1,17 @@
+stage('Unit Tests') {
+    steps {
+        script {
+            sh "mvn clean"
+            sh "mvn test"
+        }
+    }
+}
+
+stage('Spring Unit Tests') {
+    steps {
+        script {
+            sh "mvn clean"
+            sh "mvn integration-test"
+        }
+    }
+}

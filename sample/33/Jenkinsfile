@@ -1,0 +1,7 @@
+stage('Start dependencies services') {
+    steps {
+        script {
+            sh "docker-compose up -d"
+        }
+    }
+}

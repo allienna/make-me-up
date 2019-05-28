@@ -1,0 +1,31 @@
+stage('Start dependencies services') {
+    steps {
+        script {
+            sh "make run-dependencies"
+        }
+    }
+}
+
+stage('Unit Tests') {
+    steps {
+        script {
+            sh "make unit-test"
+        }
+    }
+}
+
+stage('Spring Unit Tests') {
+    steps {
+        script {
+            sh "make integration-test"
+        }
+    }
+}
+
+stage('build') {
+    steps {
+        script {
+            sh "make build"
+        }
+    }
+}

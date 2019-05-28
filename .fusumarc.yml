@@ -1,0 +1,27 @@
+meta:
+  url: https://github.com/allienna/make-me-up
+  name: Make me up…<br/>before you Go Go ♫♪♬
+  author: Aurélien Allienne
+  thumbnail:
+  description:
+  sns:
+    - twitter
+slide:
+  loop: false
+  sidebar: true
+  targetBlank: false
+  showIndex: false
+  isVertical: false
+  code:
+    languages:
+      - makefile
+      - markdown
+      - groovy
+    plugins:
+      - file-highlight
+      - line-highlight
+      - line-numbers
+    theme: default
+extends:
+  js:
+  css: ./style.css
