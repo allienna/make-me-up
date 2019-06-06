@@ -1,7 +1,7 @@
 stage('Start dependencies services') {
-    steps {
-        script {
-            sh "make run-dependencies"
-        }
-    }
-}
+     steps {
+         script {
+             sh "make run-dependencies"
+         }
+     }
+ }

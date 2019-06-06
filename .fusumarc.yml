@@ -21,7 +21,7 @@ slide:
       - file-highlight
       - line-highlight
       - line-numbers
-    theme: default
+  theme: nebula
 extends:
   js:
-  css: ./style.css
+  css: style.css

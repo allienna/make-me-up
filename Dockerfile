@@ -8,4 +8,4 @@ COPY . .
 RUN make reset
 
 EXPOSE 8080
-CMD [ "make", "start" ]
+CMD [ "make", "run" ]

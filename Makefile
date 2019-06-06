@@ -9,7 +9,7 @@ start: build ## run docker image and expose slides through port 8080
 	@docker run -p 8080:8080 -d make-me-up
 
 .PHONY: start
-dev: ## start development server
+run: ## start development server
 	@echo "+ $@"
 	@npx fusuma start
 
@@ -17,7 +17,7 @@ dev: ## start development server
 reset: ## reset application
 	@echo "+ $@"
 	@rm -rf node_modules package-lock.json
-	@npm i fusuma -D
+	@npm i fusuma@1.1.0 -D
 	@npm install --save @fortawesome/fontawesome-free
 
 .PHONY: pdf
